@@ -1,0 +1,805 @@
+
+/* ---------------------------------------------- font ---------------------------------------------- */
+
+/* handwritten font google */
+.nothing-you-could-do-regular {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* regular font google */
+.basic-font {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ------------------------------------- scroll to top button ------------------------------------- */
+
+/* scroll to top button*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    background-color: #86a4ab;
+    /* Button background color */
+    color: #f9f8f6;
+    /* Icon color */
+    border: none;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    opacity: 0.75;
+}
+
+/* scroll to top button when hover*/
+.scroll-to-top:hover {
+    background-color: #829a9f;
+    /* Darker shade on hover */
+    opacity: 0.75;
+}
+
+/* scroll to top arrow icon */
+.scroll-to-top i {
+    font-size: 22px;
+    /* Size of the icon */
+}
+
+/* ----------------------------------------- Global Styles ----------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #efede6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* To align the icons on the left and the rest on the right */
+    align-items: left;
+}
+
+h1 {
+    text-align: center;
+    color: #514034;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #514034;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.about {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9b9387;
+}
+
+
+/* title in sections */
+h3.subject {
+    margin-top: 0;
+    color: #a99677;
+    font-weight: 400;
+}
+
+h5 {
+    color: #514034;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+p {
+    color: #514034;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #a99677;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #a08e70;
+}
+
+/* Hello big title */
+.hello {
+    margin-top: 10px;
+    color: #bdae97;
+    font-size: 85px;
+    padding: 0;
+}
+
+/* contact section: text style */
+.contact-text {
+    color: #bdae97;
+}
+
+/* contact items style: Icons for LinkedIn and Email */ 
+.contact {
+    margin: 0;
+}
+
+/* ----------------------------------------- List Bullets ----------------------------------------- */
+
+.custom-list {
+    list-style-type: none;
+    /* Removes default bullets */
+}
+
+.custom-list li::before {
+    content: "-";
+    /* Adds dash before each list item */
+    margin-right: 8px;
+    /* Adds space between dash and text */
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.custom-list-courses {
+    list-style-type: none;
+    /* Removes default bullets */
+}
+
+.custom-list-courses li {
+    margin-left: -22px;
+    /* Moves the text closer to the left */
+}
+
+.custom-list-courses li::before {
+    content: "v";
+    /* Adds dash before each list item */
+    margin-right: 8px;
+    /* Adds space between dash and text */
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: #78a989;
+}
+
+
+/* ---------------------------------------- sections style ---------------------------------------- */
+
+/* Experience and Education - One below the other */
+.experience-item, .education-item {
+    background: #f9f8f3fc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 1px;
+}
+
+/* Grid for Certifications and Projects */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.grid-item {
+    background: #f9f8f3fc;
+    padding: 20px;
+    border-radius: 1px;
+}
+
+/*Marker pen*/
+.highlight-color {
+    background-color: #faecd2;
+    /*Light yellow color */
+    padding: 0.2em;
+    border-radius: 2px;
+}
+
+/* ---------------------------------- Responsive for smaller screens ---------------------------------- */
+@media (min-width: 0px) and (max-width: 500px) {
+
+    /* Fonts */
+    .nothing-you-could-do-regular {
+        font-family: "Nothing You Could Do", cursive;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .basic-font {
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* Scroll to top button */
+    .scroll-to-top {
+        bottom: 8px;
+        right: 8px;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .scroll-to-top i {
+        font-size: 14px;
+    }
+
+    /* Headers */
+    .hello {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    /* Headers */
+    .about {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    /* Container and Sections */
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    /* Buttons */
+    button {
+        padding: 5px 8px;
+    }
+
+    .button-container {
+        gap: 2px;
+    }
+
+    /* Grid */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    /* Footer */
+    footer {
+        height: 18px;
+        font-size: 7px;
+    }
+
+    .imgslide {
+        width: 95%;
+    }
+
+    /* Contact text */
+    .contact-text {
+        font-size: 12px;
+    }
+
+    /* Modal content */
+    .modal-content {
+        width: 90%;
+        height: 70%;
+    }
+
+    /* Skills list */
+    ul li span {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .skills-list li {
+        flex: 1 1 5%;
+    }
+
+    /*---------- nav ----------*/
+    header {
+        flex-direction: column;
+        /* Stack header elements vertically */
+        align-items: left;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        /* Allows wrapping on smaller screens */
+        justify-content: left;
+    }
+
+    .icon-nav {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: large;
+    }
+}
+
+/*Mid size*/
+@media (min-width: 500px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hello {
+        font-size: 58px; 
+    }
+
+    h5 {
+        color: #514034;
+        font-family: "Nothing You Could Do", cursive;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+        /* Headers */
+        .about {
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    
+    header {
+        flex-direction: column;
+        /* Stack header elements vertically */
+        align-items: left;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        /* Allows wrapping on smaller screens */
+        justify-content: left;
+    }
+
+    .icon-nav {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: large;
+    }
+
+        /* Container and Sections */
+        .container {
+            padding: 15px;
+        }
+
+}
+
+/* ------------------------------------------- nav tab ------------------------------------------- */
+
+.icon-nav {
+    display: flex;
+    margin-right: 10px;
+    /* Aligns the icons to the right */
+    margin-left: 10px;
+    font-size: large;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+    /* Space between navigation tabs */
+    margin-left: 0;
+    /* Pushes the nav links to the right */
+}
+
+
+.nav {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    /* Define the sticky position */
+    background: #86a4ab;
+    color: #f9f8f6;
+    padding: 6px 0;
+    text-align: left;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.nav a {
+    color: #f9f8f6;
+    text-decoration: none;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.nav a:hover {
+    color: #c2d1d4;
+}
+
+/* ------------------- Styles for icons in More Information (contact) section ------------------- */
+
+.contact-info-icons {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info-icons a {
+    margin: 0 15px;
+    color: #bdae97;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-info-icons a:hover {
+    color: #ccc1af;
+    margin: 0 5px;
+}
+
+
+/* --------------------------------------- the logo in nav --------------------------------------- */
+
+/*brand logo style */
+.custom-brand {
+    margin-left: 10px;
+    /* the brand logo placement */
+    font-size: 1.2rem;
+    /* Make text bigger */
+    font-weight: bold;
+    /* Makes the text bolder */
+    letter-spacing: 0.05em;
+    /* Adds a little spacing between letters */
+
+}
+
+/*brand logo style when hover */
+.custom-brand:hover {
+    color: #c2d1d4;
+    /* Add a hover effect, changes color on hover */
+    text-decoration: none;
+    /* Removes underline on hover */
+}
+
+
+/* ----------------------------- Style for the modal - img and videos -----------------------------*/
+
+img {
+    display: block;
+}
+
+/* boarder for a image/video */
+.imgboarder {
+    border: 5px solid white;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+/*pdf and Github buttons*/
+.button-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    /* Keeps the buttons on one line */
+    gap: 5px;
+    /* Adds spacing between the buttons */
+    margin: 0px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 196, 186, 0.6);
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 10px;
+    width: 80%;
+    height: 75%;
+    background-color: white;
+}
+
+.modal-content-zoom {
+    position: relative;
+    margin: 5% auto;
+    display: block;
+    padding: 10px;
+    width: 70%;
+    background-color: white;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Close button - exit X */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: #514034;
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+/* Style the iframe (PDF viewer) */
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------- Skills (Notes) ------------------------------------------*/
+ul li span {
+    text-decoration: none;
+    background: #f1e1c4;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    /* Reduced top padding */
+    padding-bottom: 0px;
+    /* Reduced bottom padding */
+    border-radius: 1px;
+    text-align: left;
+    color: #514034;
+    opacity: 70%;
+    line-height: 1;
+    /* Adjusted line height to minimize vertical space */
+}
+
+ul li span {
+    transform: rotate(-6deg);
+}
+
+ul li span:hover {
+    transform: rotate(-8deg);
+}
+
+ul li:nth-child(even) span {
+    transform: rotate(4deg);
+    position: relative;
+    top: 2px;
+}
+
+ul li:nth-child(3n) span {
+    transform: rotate(-3deg);
+    position: relative;
+    top: -2px;
+}
+
+ul li:nth-child(5n) span {
+    transform: rotate(5deg);
+    position: relative;
+    top: -4px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    flex: 1 1 2%;
+    /* 2% width with some margin for responsiveness */
+    margin: 5px;
+
+}
+
+
+/* -------------------------------------- All rights reserved --------------------------------------- */
+footer {
+    height: 25px;
+    background-color: #eae8e1;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    position: relative;
+    line-height: 25px;
+    /* This ensures the text is vertically centered */
+    padding: 0;
+    /* Remove padding since line-height handles vertical centering */
+}
+
+footer p {
+    color: #bdae97;
+}
+
+/* ------------------------------------- slideshow multiple ------------------------------------- */
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+}
+
+.imgslide {
+    vertical-align: middle;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -20px;
+    background-color: #efede6;
+    color: #514034;
+    opacity: 0.6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: #efebe6d0;
+    color: #514034;
+    opacity: 0.8;
+    transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ---------------------------------------------- burger menu -------------------------------------------- */
+
+/* Hide the burger icon by default */
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+/* Media query for smaller screens - burger button */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide nav-links by default on small screens */
+        flex-direction: column;
+        /* Stack links vertically */
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .burger {
+        display: block;
+        /* Show the burger icon */
+        font-size: small;
+        color: #f9f8f6;
+        margin-right: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .burger i {
+        font-size: 18px;
+        /* Make the burger icon bigger */
+    }
+
+}
+
+/* Styles for larger screens (768px and above) */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+        /* Show nav-links on larger screens */
+    }
+
+    .burger {
+        display: none;
+        /* Hide the burger icon on larger screens */
+    }
+}
+
+.logoandburger {
+    display: flex;
+    /* Flexbox layout */
+    flex-direction: row;
+    /* Align items in a row */
+    justify-content: flex-start;
+    /* Align to the left */
+    align-items: center;
+    /* Center items vertically */
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
