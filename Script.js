@@ -1,3 +1,22 @@
+// -------------------------------- burger change icons (burger and X)  ----------------------------- 
+function toggleMenu() {
+    const burger = document.getElementById('burger');
+    burger.classList.toggle('open');
+}
+
+function toggleMenuresize() {
+    const burger = document.getElementById('burger');
+    const screenWidth = window.innerWidth;
+
+    // check if X (if X change to burger) when change size screen
+    if (burger.textContent === '\f00d') {
+        burger.classList.toggle('open');
+    }
+ 
+}
+window.addEventListener('resize', toggleMenuresize);
+
+
 // -------------------------------------- Scroll to top  -------------------------------------- 
 // Scroll to top functionality 
 function scrollToTop() {

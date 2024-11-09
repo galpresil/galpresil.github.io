@@ -1,4 +1,3 @@
-
 /* ---------------------------------------------- font ---------------------------------------------- */
 
 /* handwritten font google */
@@ -217,6 +216,15 @@ button:hover {
 
 }
 
+/* Add less space between certifications sections */
+#certifications-1 {
+    margin-bottom: 20px; /* Reduced space after the first section */
+}
+
+#certifications-2 {
+    margin-top: 20px; /* Reduced space before the second section */
+}
+
 .grid-item {
     background: #f9f8f3fc;
     padding: 20px;
@@ -311,6 +319,15 @@ button:hover {
         gap: 8px;
     }
 
+    /* Add less space between certifications sections */
+    #certifications-1 {
+        margin-bottom: 10px; /* Reduced space after the first section */
+    }
+
+    #certifications-2 {
+        margin-top: 10px; /* Reduced space before the second section */
+    }
+
     /* Footer */
     footer {
         height: 18px;
@@ -362,6 +379,16 @@ button:hover {
         margin-left: 10px;
         font-size: large;
     }
+
+    /* Transform the burger icon into an X when the menu is open */
+    .burger.open i {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .burger.open i:before {
+        content: '\f00d'; /* X icon */
+    }
 }
 
 /*Mid size*/
@@ -370,6 +397,15 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
+    /* Add less space between certifications sections */
+    #certifications-1 {
+        margin-bottom: 10px; /* Reduced space after the first section */
+    }
+    
+    #certifications-2 {
+        margin-top: 10px; /* Reduced space before the second section */
+    }
+    
     .hello {
         font-size: 58px; 
     }
@@ -382,13 +418,13 @@ button:hover {
         font-size: 18px;
     }
 
-        /* Headers */
-        .about {
-            font-size: 18px;
-            font-weight: 500;
-            margin-left: 80px;
-            margin-right: 80px;
-        }
+    /* Headers */
+    .about {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
     
     header {
         flex-direction: column;
@@ -409,11 +445,20 @@ button:hover {
         font-size: large;
     }
 
-        /* Container and Sections */
-        .container {
-            padding: 15px;
-        }
+    /* Container and Sections */
+    .container {
+        padding: 15px;
+    }
 
+    /* Transform the burger icon into an X when the menu is open */
+    .burger.open i {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .burger.open i:before {
+        content: '\f00d'; /* X icon */
+    }
 }
 
 /* ------------------------------------------- nav tab ------------------------------------------- */
@@ -433,7 +478,6 @@ button:hover {
     margin-left: 0;
     /* Pushes the nav links to the right */
 }
-
 
 .nav {
     margin: 0;
@@ -784,9 +828,11 @@ footer p {
     }
 
     .burger {
+         /* will return to burger icon */
         display: none;
-        /* Hide the burger icon on larger screens */
+        /* after Hide the burger icon on larger screens */
     }
+
 }
 
 .logoandburger {

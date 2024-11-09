@@ -32,7 +32,7 @@
 
         <!-- logo and burger menu -->
         <span class="logoandburger">
-            <span class="burger" id="burger"><i class="fas fa-bars"></i></span>
+            <span class="burger" id="burger" onclick="toggleMenu()"><i class="fas fa-bars"></i></span>
             <a class="nothing-you-could-do-regular custom-brand" href="#">Gal</a>
         </span>
 
@@ -338,7 +338,7 @@
         </section>
 
         <!-- Certifications Section -->
-        <section id="certifications">
+        <section id="certifications-1">
             <h2>Certifications</h2>
             <div class="grid">
                 <div class="grid-item">
@@ -360,7 +360,7 @@
         </section>
 
         <!-- Certifications Section (#2) -->
-        <section id="certifications">
+        <section id="certifications-2">
             <div class="grid">
                 <div class="grid-item">
                     <h3 class="subject">Microsoft Entra ID (Azure AD) Administration</h3>
@@ -369,8 +369,13 @@
                     <br><img id="imgEntraID" src="Certifications_imgs/Microsoft_Entra_ID _Azure_AD_Administration_Certificate.jpg" alt="Entra ID Certification Image"
                         width="80%" height="auto" style="display: none;" />
                 </div>
-                <!-- <div class="grid-item">
-                </div> -->
+                <div class="grid-item">
+                    <h3 class="subject">The Complete Python Programming Course</h3>
+                    <p>Udemy</p>
+                    <button onclick="toggleImage('imgPythonBeginnertoAdvanced')">Show/Hide certification</button>
+                    <br><img id="imgPythonBeginnertoAdvanced" src="Certifications_imgs/The_Complete_Python_Programming_Course-Beginner_to_Advanced_Certificate.jpg" alt="Python Beginner to Advanced Certification Image"
+                        width="80%" height="auto" style="display: none;" />
+                </div>
             </div>
         </section>
 
