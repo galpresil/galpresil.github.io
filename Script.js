@@ -6,15 +6,19 @@ function toggleMenu() {
 
 function toggleMenuresize() {
     const burger = document.getElementById('burger');
-    const screenWidth = window.innerWidth;
 
-    // check if X (if X change to burger) when change size screen
-    if (burger.textContent === '\f00d') {
+    if (burger.classList.contains('open')) // Is 'true' (when X)
+        {
+        // Toggle 'open' class for the burger icon (when X) - to burger icon
         burger.classList.toggle('open');
-    }
- 
+        }
 }
+
+// Call toggleMenuresize when the window is resized
 window.addEventListener('resize', toggleMenuresize);
+
+// call it once on page load to ensure the correct state based on the current screen size
+toggleMenuresize();
 
 
 // -------------------------------------- Scroll to top  -------------------------------------- 
