@@ -563,7 +563,7 @@ img {
     border-radius: 6px;
 }
 
-/*pdf and Github buttons*/
+/*Github buttons*/
 .button-container {
     display: flex;
     justify-content: left;
@@ -624,7 +624,7 @@ img {
     z-index: 2;
 }
 
-/* Style the iframe (PDF viewer) */
+/* Style the iframe (new window viewer) */
 iframe {
     width: 100%;
     height: 100%;
