@@ -38,22 +38,23 @@ function toggleImage(imgId) {
 }
 
 // --------------------- PDF modal - HR Dashboard Project Report Power BI --------------------- 
+// -------------------------------------- Remove - Not Necessary ---------------------------------------
 // PDF modal handling
-const modal = document.getElementById("pdfModal");
-const openBtn = document.getElementById("openPDF");
-const closeBtn = document.querySelector(".close-btn");
-const pdfViewer = document.getElementById("pdfViewer");
+// const modal = document.getElementById("pdfModal");
+// const openBtn = document.getElementById("openPDF");
+// const closeBtn = document.querySelector(".close-btn");
+// const pdfViewer = document.getElementById("pdfViewer");
 
-// Show PDF: Use the Raw URL and an External online PDF viewer like Google Docs Viewer 
-openBtn.onclick = function () {
-    pdfViewer.src = "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/galpresil/HR_Dashboard_with_Power_BI/main/HR%20Dashboard%20Project%20Report.pdf&embedded=true";
-    modal.style.display = "block";
-}
+// // Show PDF: Use the Raw URL and an External online PDF viewer like Google Docs Viewer 
+// openBtn.onclick = function () {
+//     pdfViewer.src = "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/galpresil/HR_Dashboard_with_Power_BI/main/HR%20Dashboard%20Project%20Report.pdf&embedded=true";
+//     modal.style.display = "block";
+// }
 
-closeBtn.onclick = function () {
-    modal.style.display = "none";
-    pdfViewer.src = "";  // Clear the PDF source when closed
-}
+// closeBtn.onclick = function () {
+//     modal.style.display = "none";
+//     pdfViewer.src = "";  // Clear the PDF source when closed
+// }
 
 // ---------------------------------------- Slideshow  ---------------------------------------- 
 // Slideshow functionality (for 2 sections - 2 diffrent sliders)
