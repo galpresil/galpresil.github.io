@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Gal Presil - Project Coordinator and Data Analyst Portfolio">
+    <meta name="keywords" content="Gal Presil, Project Coordinator, Data Analyst, Portfolio, Power BI, Python, SQL">
+    <meta name="author" content="Gal Presil">
+
     <title>Gal Presil</title>
 
     <!-- BrowserLogo -->
@@ -33,7 +38,7 @@
         <!-- logo and burger menu -->
         <span class="logoandburger">
             <span class="burger" id="burger" onclick="toggleMenu()"><i class="fas fa-bars"></i></span>
-            <a class="nothing-you-could-do-regular custom-brand" href="#">Gal</a>
+            <a class="nothing-you-could-do-regular custom-brand" href="#">Gal Presil</a>
         </span>
 
         <!-- All Links on nav tab -->
@@ -60,14 +65,21 @@
         <!-- Hello + looking for a job and About -->
         <section>
 
-            <h1 class="nothing-you-could-do-regular hello">Hello, I'm Gal !</h1>
+<h1 class="nothing-you-could-do-regular hello">Hello, I'm Gal !</h1>
 
-                <span class="nothing-you-could-do-regular about">
-                    I’m Gal Presil, a Project Coordinator with a passion for Programming and Analytics<br>
-                    always looking for new opportunities to apply my skills
-                    <span style="filter: grayscale(75%);">💻</span><span style="filter: grayscale(32%);">✨</span>
-                </span>
+<p class="nothing-you-could-do-regular about">
+    <strong><em class="my-job-title">Project Coordinator and Data Specialist</em></strong><br>
+    Experienced in  <strong>Programming</strong> and <strong>Analytics</strong>.<br>
+    Always exploring new opportunities to grow ang apply my skills.
+    <span style="filter: grayscale(75%);">💻</span>
+    <span style="filter: grayscale(32%);">✨</span>
+</p>
 
+        </section>
+
+        <section>
+              <a href="#projects" class="toprojects">To My Projects >></a>
+            <br><br>
         </section>
 
         <!--Skills-->
@@ -104,6 +116,13 @@
                         <li>Organizing data and activities for efficient decision-making and business insights.</li>
                         <li>Maintaining information management systems and controlling access permissions.</li>
                         <li>Optimizing processes: identifying, planning, and implementing improvements.</li>
+
+                            <br>
+                            Skills-
+                            <br>
+                            <span class="highlight-color">
+                            Data Management <b>·</b> Analytical Skills <b>·</b> Project Management <b>·</b> Organizational Consulting
+                            </span>
                     </ul>
                 </p>
             </div>
@@ -321,14 +340,14 @@
             <h2>Education</h2>
 
             <div class="education-item">
-                <h3 class="subject">Afeka Tel Aviv Academic College of Engineering | 2019 - 2023</h3>
+                <h3 class="subject">B.Sc. Industrial Engineering & Management</h3>
                 <p>
-                    B.Sc. Industrial Engineering & Management
+                     2019 - 2023 | Afeka Tel Aviv Academic College of Engineering
                 <ul class="custom-list">
-                    <li>Majors: Information Systems and Business Analytics.</li>
-                    <li>First place in Afeka’s final project competition at the Industrial Engineering & Management
+                <li><b>Majors: Information Systems and Business Analytics</b></li>
+                    <li><b>First place</b> in Afeka’s final project competition at the Industrial Engineering & Management
                         department (2023).</li>
-                    <li>Relevant Courses:
+                    <li><b>Relevant Courses:</b>
                         <ul class="custom-list-courses">
                             <li>Data Mining</li>
                             <li>Cloud Data Engineering</li>
@@ -344,12 +363,14 @@
             </div>
 
             <div class="education-item">
-                <h3 class="subject">ORT Givatayim High School | 2012 - 2016</h3>
-                <p> High School Diploma, Computer Science</p>
+                <h3 class="subject">High School Diploma, Computer Science</h3>
+                <p>ORT Givatayim High School</p>
             </div>
 
         </section>
 
+
+        <section id="certifications">
         <!-- Certifications Section -->
         <section id="certifications-1">
             <h2>Certifications</h2>
@@ -372,7 +393,7 @@
             </div>
         </section>
 
-        <div id="certifications">
+        <div>
         <!-- Certifications Section (#2) -->
         <section id="certifications-2">
             <div class="grid">
@@ -393,6 +414,23 @@
             </div>
         </section>
         </div>
+
+        <div>
+            <!-- Certifications Section (#3) -->
+            <section id="certifications-3">
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3 class="subject">Project Management</h3>
+                        <p>CampusIL</p>
+                        <button onclick="toggleImage('CampusIL_PM')">Show/Hide certification</button>
+                        <br>
+                        <img id="CampusIL_PM" src="Certifications_imgs/Project_Managment_CampusIL.png" alt="Project Management Certification Image"
+                             width="80%" height="auto" style="display: none;" />
+                    </div>
+                </div>
+            </section>
+        </div>
+        </section>
 
         <!-- contact Section -->
         <section class="nothing-you-could-do-regular contact">
