@@ -71,10 +71,12 @@ header {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     color: #514034;
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:0px;
 }
 
 h2 {
@@ -86,14 +88,18 @@ h2 {
 
 .about {
     display: block;
-    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0;
-    text-align: center;
     font-weight: 500;
     font-size: 20px;
     color: #9b9387;
 }
 
+.my-job-title {
+    font-size: 1.8rem;
+}
 
 /* title in sections */
 h3.subject {
@@ -159,6 +165,55 @@ button:hover {
     margin: 0;
 }
 
+/* Ensure that the parent container is positioned */
+.container {
+    position: relative; 
+}
+
+/* Container to align both elements */
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between button to projects and LinkedIn link */
+    margin-top: 0px;
+}
+
+/* Button styles - to my projects botton*/
+.toprojects {
+    font-family: "Nothing You Could Do", cursive;
+    padding: 5px 20px;
+    background-color: rgb(132, 163, 166);
+    color: rgba(255, 255, 255, 0.858);
+    text-decoration: none;
+    border-radius: 3px;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+    opacity: 0.85;
+}
+
+/* Hover effect to change background */
+.toprojects:hover {
+    background-color: rgb(100, 140, 145);
+    opacity: 0.75;
+}
+
+/* to linkdin - about section ---> deleted*/
+.tolinkedin {
+    font-size: 39px;
+    color: rgb(132, 163, 166);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effect to linkdin - about section ---> deleted*/
+.tolinkedin:hover {
+    color: rgb(100, 140, 145);
+    opacity: 0.75;
+}
+
 /* ----------------------------------------- List Bullets ----------------------------------------- */
 
 .custom-list {
@@ -213,8 +268,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
 }
+
 
 /* Add less space between certifications sections */
 #certifications-1 {
@@ -222,8 +277,24 @@ button:hover {
 }
 
 #certifications-2 {
-    margin-top: 20px; /* Reduced space before the second section */
+    margin-top: 10px; /* Reduced space before the second section */
+    margin-bottom: 10px; /* Reduced space after the last section */
 }
+
+#certifications-3 {
+    margin-top: 20px;
+}
+
+
+/* Add less space between projects divs */
+#Project-div-1 {
+    margin-bottom: 0px; /* Reduced space after the first section */
+}
+
+#Project-div-2 {
+    margin-top: 0px; /* Reduced space after the last section */
+}
+
 
 .grid-item {
     background: #f9f8f3fc;
@@ -240,7 +311,7 @@ button:hover {
 }
 
 /* ---------------------------------- Responsive for smaller screens ---------------------------------- */
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 499px) {
 
     /* Fonts */
     .nothing-you-could-do-regular {
@@ -279,9 +350,14 @@ button:hover {
     .about {
         font-size: 16px;
         font-weight: 500;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    .my-job-title {
+        font-size: 1.2rem;
+    }
+    
 
     h1 {
         font-size: 20px;
@@ -321,17 +397,16 @@ button:hover {
 
     /* Add less space between certifications sections */
     #certifications-1 {
-        margin-bottom: 10px; /* Reduced space after the first section */
+        margin-bottom: 8px; /* Reduced space after the first section */
     }
 
     #certifications-2 {
-        margin-top: 10px; /* Reduced space before the second section */
+        margin-top: 0px; /* Reduced space before the second section */
+        margin-bottom: 0px; /* Reduced space after the last section */
     }
-
-    /* Footer */
-    footer {
-        height: 18px;
-        font-size: 7px;
+    
+    #certifications-3 {
+        margin-top: 8px;
     }
 
     .imgslide {
@@ -399,11 +474,16 @@ button:hover {
 
     /* Add less space between certifications sections */
     #certifications-1 {
-        margin-bottom: 10px; /* Reduced space after the first section */
+        margin-bottom: 20px; /* Reduced space after the first section */
     }
     
     #certifications-2 {
-        margin-top: 10px; /* Reduced space before the second section */
+        margin-top: 0px; /* Reduced space before the second section */
+        margin-bottom: 0px;
+    }
+
+    #certifications-3 {
+        margin-top: 20px; /* Reduced space before the second section */
     }
     
     .hello {
@@ -422,9 +502,14 @@ button:hover {
     .about {
         font-size: 18px;
         font-weight: 500;
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    .my-job-title {
+        font-size: 1.5rem;
+    }
+    
     
     header {
         flex-direction: column;
@@ -694,20 +779,18 @@ ul li:nth-child(5n) span {
 
 /* -------------------------------------- All rights reserved --------------------------------------- */
 footer {
-    height: 25px;
+    height: 18px;
     background-color: #eae8e1;
     text-align: center;
     font-size: 10px;
-    margin: 0;
-    position: relative;
-    line-height: 25px;
-    /* This ensures the text is vertically centered */
+    line-height: 18px;
     padding: 0;
-    /* Remove padding since line-height handles vertical centering */
+    margin-bottom: 0;
 }
 
 footer p {
     color: #bdae97;
+    margin: 0;
 }
 
 /* ------------------------------------- slideshow multiple ------------------------------------- */
