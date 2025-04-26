@@ -310,6 +310,7 @@ button:hover {
     border-radius: 2px;
 }
 
+
 /* ---------------------------------- Responsive for smaller screens ---------------------------------- */
 @media (min-width: 0px) and (max-width: 499px) {
 
