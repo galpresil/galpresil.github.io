@@ -1,460 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gal Presil</title>
 
-    <meta name="description" content="Gal Presil - Project Coordinator and Data Analyst Portfolio">
-    <meta name="keywords" content="Gal Presil, Project Coordinator, Data Analyst, Portfolio, Power BI, Python, SQL">
-    <meta name="author" content="Gal Presil">
+  <!-- BrowserLogo -->
+  <link rel="icon" href="Logo_and_About/BrowserLogo.png" type="image/png">
 
-    <title>Gal Presil</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- BrowserLogo -->
-    <link rel="icon" href="Logo_and_About/BrowserLogo.png" type="image/png">
+  <!-- Fonts Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Fonts Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
-
-    <!-- CSS file link -->
-    <link rel="stylesheet" href="StyleSheet.css">
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="StyleSheet.css">
 
 </head>
 
-<body class="basic-font">
+<body>
 
-     <!-- header: The nav tab -->
-    <header class="nav">
+<header>
+    <!-- nav menu -->
+    <div class="nav container">
 
-        <!-- logo and burger menu -->
-        <span class="logoandburger">
-            <span class="burger" id="burger" onclick="toggleMenu()"><i class="fas fa-bars"></i></span>
-            <a class="nothing-you-could-do-regular custom-brand" href="#">Gal Presil</a>
-        </span>
+      <!-- logo -->
+      <div class="brand merriweather-regular">
+        <a href="#about" class="brand-link"><strong>Gal Presil</strong></a>
+      </div>
 
-        <!-- All Links on nav tab -->
-        <nav class="nav-links" id="nav-links">
+      <!-- Navigation links -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </nav>
 
-            <!-- Links on nav tab -->
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
+      <!-- Hamburger menu for mobile -->
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display:none;"></i>
+      </button>
 
-            <!-- Links on nav tab: Icons for LinkedIn and Email -->
-            <div class="icon-nav">
-                <a href="https://www.linkedin.com/in/gal-presil" class="contact"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:gal.presil@gmail.com" class="contact"><i class="fas fa-envelope"></i></a>
+  </div>
+</header>
+
+<div class="menu-overlay"></div>
+
+  <main>
+    <section class="hero" id="about">
+      <div>
+        <h1 class="merriweather-regular hero-title-type"><span id="typewriter"></span><span class="typewriter-cursor" aria-hidden="true">|</span></h1>
+        
+        <p> 
+            Data Specialist & Project Coordinator | B.Sc. in Industrial Engineering and Management - Information Systems and Business Analytics
+        </p>
+        
+        <p>
+            <div class="contact-icons">
+            <a href="mailto:gal.presil@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/gal-presil/" ><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/galpresil" ><i class="fab fa-github"></i></a>
             </div>
+        </p>
 
-        </nav>
+  <a href="#projects" class="btn">View My Projects <i class="fas fa-arrow-right-long"></i></a>
+      </div>
+    </section>
 
-    </header>
+    <section id="skills">
+      <div class="container">
+        <ul class="skills-list">
+         
+        <!-- Dev/Technical Skills -->
+        <li>SQL</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML + CSS</li>
 
-    <div class="container">
+        <!-- Data & Analytics Skills -->
+        <li>Machine Learning</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Business Intelligence (BI)</li>
+        <li>Data Management</li>
 
-        <!-- Hello + looking for a job and About -->
-        <section>
+        <!-- Tools & Platforms -->
+        <li>Git + GitHub</li>
+        <li>Copilot</li>
 
-<h1 class="nothing-you-could-do-regular hello">Hello, I'm Gal !</h1>
+        <!-- IT & Systems -->
+        <li>Active Directory</li>
+        <li>Network Administration</li>
+        
+        <!-- Management & Soft Skills -->
+        <li>Project Management</li>
+        <li>Organizational Consulting</li>
+        <li>Attention to Detail</li>
+        <li>Problem Solving</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        </ul>
+      </div>
+    </section>
 
-<p class="nothing-you-could-do-regular about">
-    <strong><em class="my-job-title">Project Coordinator and Data Specialist</em></strong><br>
-    Always exploring new opportunities to grow and apply my skills.
-    <span style="filter: grayscale(75%);">💻</span>
-    <span style="filter: grayscale(32%);">✨</span>
-</p>
+<section id="projects">
 
-        </section>
+  <div class="section-title"><h2>Projects</h2></div>
+  <div class="container grid grid-2">
+    
+    <div class="card">
+      <h3>Sentiment Detection System for User Feedback Using Machine Learning</h3>
 
-        <section>
-              <a href="#projects" class="toprojects">To My Projects >></a>
-            <br><br>
-        </section>
-
-        <!--Skills-->
-        <section>
-            
-            <div>
-                <ul class="skills-list">
-                    <li><span><h5>Python</h5></span></li>
-                    <li><span><h5>SQL</h5></span></li>
-                    <li><span><h5>JavaScript</h5></span></li>
-                    <li><span><h5>HTML</h5></span></li>
-                    <li><span><h5>CSS</h5></span></li>
-                    <li><span><h5>Power BI</h5></span></li>
-                    <li><span><h5>Machine Learning (NLP)</h5></span></li>
-                    <li><span><h5>Git + GitHub</h5></span></li>
-                    <li><span><h5>Microsoft Office</h5></span></li>
-                    <li><span><h5>Network Administration</h5></span></li>
-                    <li><span><h5>Project Management</h5></span></li>
-                    <li><span><h5>Organizational Consulting</h5></span></li>
-                    <li><span><h5>Teamwork</h5></span></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3 class="subject">Project Coordinator - Organization & Methods Department</h3>
-                <p>
-                    Dec 2024 - Present | Afeka Tel Aviv Academic College of Engineering
-                    <ul class="custom-list">
-                        <li>Leading cross-organizational projects; Collaborating closely with various departments.</li>
-                        <li>Organizing data and activities for efficient decision-making and business insights.</li>
-                        <li>Maintaining information management systems and controlling access permissions.</li>
-                        <li>Optimizing processes: identifying, planning, and implementing improvements.</li>
-
-                            <br>
-                            Skills-
-                            <br>
-                            <span class="highlight-color">
-                            Data Management <b>·</b> Analytical Skills <b>·</b> Project Management <b>·</b> Organizational Consulting
-                            </span>
-                    </ul>
-                </p>
-            </div>
-
-            <div class="experience-item">
-                <h3 class="subject">Senior IT Manager & Team Leader</h3>
-                <p>
-                    Jul 2018 - Present | Israeli Navy, Reserve Duty
-                    <ul class="custom-list">
-                        <li>Certificate of Excellence in Reserve Duty from the Unit Commander (2024).</li>
-                        <li>Overseeing and coordinating IT activities and projects of the team.</li>
-                        <li>Providing user support and implementing communication networks.</li>
-                        <li>Management of the staff members' learning program.</li>
-                    </ul>
-                </p>
-
-                <h3 class="subject">IT Manager</h3>
-                <p>
-                    Jul 2016 - Jul 2018 | Israeli Navy
-                    <ul class="custom-list">
-                        <li>Certificate of Excellence from the Navy Commander (2018).</li>
-                        <li>Installation and configuring communication networks and systems at various sites.</li>
-                        <li>Training staff members and building a learning program and exams.</li>
-                        <li>Providing technical support and user management on military systems.</li>
-                    </ul>
-                </p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <!--grid: HR dashboard and sentiment detection project-->
-            <div class="grid">
-
-                <!--Sentiment Detection System-->
-                <div class="grid-item">
-                    <h3 class="subject">
-                        Sentiment Detection System of Opinions of Passengers Public Transportation 
-                        - Academic Final Project</h3>
-
-                    <p style="text-align: center;">
-                        <video width="85%" height="auto" controls class="imgboarder">
+      <p style="text-align: center;">
+                        <video height="auto" controls class="imgboarder">
                             <source src="Projects_imgs_and_videos/FinalProject.mp4" type="video/mp4">
                         </video>
-                    </p>
+      </p>
+      <p class="muted"><br>
+        The project aims to enhance public transportation by analyzing customer sentiment from social media. 
+        including developing a website, NLP algorithms, and building a dynamic dashboard.
+      </p>
+      <p class="muted"><br>
+        🏆 First place in Afeka’s final project competition at the Industrial Engineering & Management department.
+      </p>
 
-                    <p> The project aimed to improve public transportation services using machine learning by developing
-                        a website with a sentiment analysis algorithm and a dynamic dashboard.
-                        This platform allows transportation companies to analyze customer opinions from social media,
-                        providing valuable insights to enhance service quality.
-                        <br><br>
-                        🏆 First place in Afeka’s final project competition at the Industrial Engineering & Management
-                        department.
-                        <br><br>
-                        Technologies - <br>
-                        <span class="highlight-color">
-                            Python (inc. Natural Language Processing) <b>·</b> SQL <b>·</b> Microsoft Power BI <b>·</b>
-                            JavaScript <b>·</b> CSS <b>·</b> HTML
-                        </span>
-                    </p>
-                </div>
-
-                <!--HR Dashboard-->
-                <div class="grid-item">
-                    <!--title-->
-                    <h3 class="subject">HR Dashboard with Power BI</h3>
-
-                    <!--Slideshow - mySlides1(HR Dashboard)-->
-                    <div>
-                        <div class="slideshow-container">
-                            <div class="mySlides1 fade">
-                                <img src="Projects_imgs_and_videos/HRpage1.png" class="imgslide imgboarder" onclick="zoomImage(this)">
-                            </div>
-
-                            <div class="mySlides1 fade">
-                                <img src="Projects_imgs_and_videos/HRpage2.png" class="imgslide imgboarder" onclick="zoomImage(this)">
-                            </div>
-
-                            <div class="mySlides1 fade">
-                                <img src="Projects_imgs_and_videos/HRpage3.png" class="imgslide imgboarder" onclick="zoomImage(this)">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                        </div>
-                    </div>
-
-                    <!-- Modal to display zoomed image -->
-                    <div id="zoomModal" class="modal">
-                        <span class="close" onclick="closeZoom()">&times;</span>
-                        <img class="modal-content-zoom" id="zoomedImg">
-                    </div>
-
-                    <!--Text (HR Dashboard)-->
-                    <p>This project involves the creation of a three-page HR dashboard
-                        using Power BI to enhance employee recruitment, satisfaction, and retention.
-                        <br><br>
-                        Power BI techniques - <br>
-                        <span class="highlight-color">
-                            Power Query <b>·</b> Data Modeling <b>·</b> DAX <b>·</b> Data Visualization
-                        </span>
-                    </p>
-
-                    <!-- Button Container (HR Dashboard) -->
-                    <div class="button-container">
-
-                        <!-- Button to open the PDF (HR Dashboard) | Remove - Not Necessary-->
-                        <!-- <button id="openPDF">Open project pdf report</button> -->
-
-                        <!-- GitHub button (HR Dashboard) -->
-                        <a href="https://github.com/galpresil/HR_Dashboard_with_Power_BI.git"
-                            style="text-decoration: none;">
-                            <button style="display: flex; align-items: center;">
-                                <svg height="18" width="18" viewBox="0 0 16 16" version="1.1" aria-hidden="true"
-                                    style="fill: white; margin-right: 8px;">
-                                    <path fill-rule="evenodd"
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.3c-2.23.48-2.7-1.08-2.7-1.08-.36-.91-.88-1.15-.88-1.15-.72-.49.05-.48.05-.48.8.06 1.22.83 1.22.83.71 1.21 1.87.86 2.33.66.07-.52.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.22 2.2.82A7.68 7.68 0 0 1 8 4.58c.68.003 1.36.09 2 .26 1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.74-3.66 3.93.29.25.54.73.54 1.48v2.19c0 .21.15.45.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                                View on GitHub
-                            </button>
-                        </a>
-                    </div>
-
-                    <!-- Modal that contains the PDF (HR Dashboard) | Remove - Not Necessary -->
-                    <!-- <div id="pdfModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close-btn">&times;</span>
-                            <iframe id="pdfViewer" src="" frameborder="0"></iframe>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-            <br>
-
-
-            <!--grid: Excel and my website project-->
-            <div class="grid">
-
-                <!--Excel-->
-                <!--Excel Dashboard and Search Form-->
-                <div class="grid-item">
-                    <!--title-->
-                    <h3 class="subject">Dynamic Sales Dashboard and Search Form in Excel</h3>
-
-                    <!--Slideshow - mySlides2 (Excel Dashboard and Search Form)-->
-                    <div>
-                        <div class="slideshow-container">
-                            <div class="mySlides2 fade">
-                                <img src="Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png" class="imgslide imgboarder"
-                                    onclick="zoomImage(this)">
-                            </div>
-
-                            <div class="mySlides2 fade">
-                                <img src="Projects_imgs_and_videos/Sales_Search_Form.png" class="imgslide imgboarder" onclick="zoomImage(this)">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                        </div>
-                    </div>
-
-                    <!--Text (Excel)-->
-                    <p>This project involves creating an interactive Excel workbook
-                        with two key components: a dynamic dashboard and a search form.
-                        These tools, based on vehicles models sales data from Kaggle,
-                        will offer a comprehensive data overview and simplify business management.
-                        <br><br>
-                        Excel tools - <br>
-                        <span class="highlight-color">
-                            Pivot Tables <b>·</b> Slicers <b>·</b> Sorting and Filtering <b>·</b>
-                            Formatting <b>·</b> Functions (including VLOOKUP)
-                        </span>
-                    </p>
-                </div>
-
-                <!--my web in project section-->
-                <div class="grid-item">
-                    <h3 class="subject">My Online Resume - Gal Presil</h3>
-                    <p>
-                        My online resume is a comprehensive platform to highlight my projects, experience, and skills.
-                        It allows flexibility over the traditional resume
-                        and an accessible way to connect with potential opportunities. Check it out here: <a href="https://galpresil.github.io/">https://galpresil.github.io/</a>
-                        <br><br>
-                        Technologies - <br>
-                        <span class="highlight-color">
-                            JavaScript <b>·</b> CSS <b>·</b> HTML <b>·</b> Git and GitHub
-                        </span>
-                    </p>
-
-                    <!-- GitHub button (my resume website repo on GitHub) -->
-                    <a href="https://github.com/galpresil/galpresil.github.io.git" style="text-decoration: none;">
-                        <button style="display: flex; align-items: center;">
-                            <svg height="18" width="18" viewBox="0 0 16 16" version="1.1" aria-hidden="true"
-                                style="fill: white; margin-right: 8px;">
-                                <path fill-rule="evenodd"
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.3c-2.23.48-2.7-1.08-2.7-1.08-.36-.91-.88-1.15-.88-1.15-.72-.49.05-.48.05-.48.8.06 1.22.83 1.22.83.71 1.21 1.87.86 2.33.66.07-.52.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.22 2.2.82A7.68 7.68 0 0 1 8 4.58c.68.003 1.36.09 2 .26 1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.74-3.66 3.93.29.25.54.73.54 1.48v2.19c0 .21.15.45.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                </path>
-                            </svg>
-                            View on GitHub
-                        </button>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Education Section (Modified: One below the other) -->
-        <section id="education">
-            <h2>Education</h2>
-
-            <div class="education-item">
-                <h3 class="subject">B.Sc. Industrial Engineering & Management</h3>
-                <p>
-                     2019 - 2023 | Afeka Tel Aviv Academic College of Engineering
-                <ul class="custom-list">
-                <li><em class="highlight-color">Majors: Information Systems and Business Analytics</em></li>
-                    <li>First place in Afeka’s final project competition at the Industrial Engineering & Management
-                        department (2023).</li>
-                    <li>Relevant Courses:
-                        <ul class="custom-list-courses">
-                            <li>Data Mining</li>
-                            <li>Cloud Data Engineering</li>
-                            <li>Data Structures and Algorithms (Python)</li>
-                            <li>Object-Oriented Programming</li>
-                            <li>Web Development</li>
-                            <li>Databases and Data-Warehouse Systems</li>
-                            <li>Human Computer Interaction (UX/UI)</li>
-                            <li>Project Management </li>
-                        </ul>
-                </ul>
-                </p>
-            </div>
-
-            <div class="education-item">
-                <h3 class="subject">High School Diploma, Computer Science</h3>
-                <p>ORT Givatayim High School</p>
-            </div>
-
-        </section>
-
-
-        <section id="certifications">
-        <!-- Certifications Section -->
-        <section id="certifications-1">
-            <h2>Certifications</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <h3 class="subject">Microsoft Power BI Desktop for Business Intelligence</h3>
-                    <p>Udemy</p>
-                    <button onclick="toggleImage('imgPowerBI')">Show/Hide certification</button>
-                    <br><img id="imgPowerBI" src="Certifications_imgs/Microsoft PowerBi Certificate.jpg" alt="Power BI Certification Image"
-                        width="80%" height="auto" style="display: none;" />
-                </div>
-                <div class="grid-item">
-                    <h3 class="subject">Data analysis with Python</h3>
-                    <p>she codes;</p>
-                    <button onclick="toggleImage('imgShecodes')">Show/Hide certification</button>
-                    <br><img id="imgShecodes" src="Certifications_imgs/DataAnalysis_shecodes_GalPresil.jpg"
-                        alt="Data analysis with Python Certification" width="80%" height="auto"
-                        style="display: none;" />
-                </div>
-            </div>
-        </section>
-
-        <div>
-        <!-- Certifications Section (#2) -->
-        <section id="certifications-2">
-            <div class="grid">
-                <div class="grid-item">
-                    <h3 class="subject">Microsoft Entra ID (Azure AD) Administration</h3>
-                    <p>Udemy</p>
-                    <button onclick="toggleImage('imgEntraID')">Show/Hide certification</button>
-                    <br><img id="imgEntraID" src="Certifications_imgs/Microsoft_Entra_ID _Azure_AD_Administration_Certificate.jpg" alt="Entra ID Certification Image"
-                        width="80%" height="auto" style="display: none;" />
-                </div>
-                <div class="grid-item">
-                    <h3 class="subject">The Complete Python Programming Course</h3>
-                    <p>Udemy</p>
-                    <button onclick="toggleImage('imgPythonBeginnertoAdvanced')">Show/Hide certification</button>
-                    <br><img id="imgPythonBeginnertoAdvanced" src="Certifications_imgs/The_Complete_Python_Programming_Course-Beginner_to_Advanced_Certificate.jpg" alt="Python Beginner to Advanced Certification Image"
-                        width="80%" height="auto" style="display: none;" />
-                </div>
-            </div>
-        </section>
-        </div>
-
-        <div>
-            <!-- Certifications Section (#3) -->
-            <section id="certifications-3">
-                <div class="grid">
-                    <div class="grid-item">
-                        <h3 class="subject">Project Management</h3>
-                        <p>CampusIL</p>
-                        <button onclick="toggleImage('CampusIL_PM')">Show/Hide certification</button>
-                        <br>
-                        <img id="CampusIL_PM" src="Certifications_imgs/Project_Managment_CampusIL.png" alt="Project Management Certification Image"
-                             width="80%" height="auto" style="display: none;" />
-                    </div>
-                </div>
-            </section>
-        </div>
-        </section>
-
-        <!-- contact Section -->
-        <section class="nothing-you-could-do-regular contact">
-            <!-- Icons for LinkedIn and Email -->
-            <div class="contact-info-icons">
-                <a href="https://www.linkedin.com/in/gal-presil"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:gal.presil@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-            <span class="contact-text">Feel free to get in touch, Gal.</span>
-        </section>
     </div>
 
-    <!--All rights reserved-->
-    <footer>
-        <p>© 2024 Gal Presil. All rights reserved.</p>
-    </footer>
 
-    <!-- On Click - Scroll to Top Button -->
-    <button class="scroll-to-top" onclick="scrollToTop()">
-        <span>&uarr;</span> <!-- Unicode arrow -->
-    </button>
+    <div class="card">
+      <h3>HR Dashboard with Power BI</h3>
+      <div class="carousel">
+        <input type="radio" name="carousel" id="carousel-1" checked>
+        <input type="radio" name="carousel" id="carousel-2">
+        <input type="radio" name="carousel" id="carousel-3">
+        <div class="carousel-images">
+          <div class="carousel-image imgboarder">
+            <img src="Projects_imgs_and_videos/HRpage1.png" alt="Carocella 1" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage1.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder">
+            <img src="Projects_imgs_and_videos/HRpage2.png" alt="Carocella 2" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage2.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder">
+            <img src="Projects_imgs_and_videos/HRpage3.png" alt="Carocella 3" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage3.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+        </div>
+      </div>
+      <p class="muted">Creating a three-page HR dashboard in Power BI to enhance employee recruitment, satisfaction, and retention.</p>
+      <div class="github-btn-container">
+        <a href="https://github.com/galpresil/HR_Dashboard_with_Power_BI" class="github-btn">
+          <i class="fab fa-github"></i>View on GitHub
+        </a>
+      </div>
+    </div>
 
-    <!-- JS file link -->
-    <script src="Script.js"></script>
+    <div class="card">
+      <h3>Sales Dashboard and Search Form with Excel</h3>
+      <div class="carousel">
+        <input type="radio" name="carousel-excel" id="carousel-excel-1" checked>
+        <input type="radio" name="carousel-excel" id="carousel-excel-2">
+        <div class="carousel-images carousel-images-excel">
+          <div class="carousel-image imgboarder">
+            <img src="Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png" alt="Excel Dashboard 1" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder">
+            <img src="Projects_imgs_and_videos/Sales_Search_Form.png" alt="Excel Dashboard 2" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/Sales_Search_Form.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="carousel-excel-1"></label>
+          <label for="carousel-excel-2"></label>
+        </div>
+      </div>
+      <p class="muted">This project involves creating a dynamic sales dashboard and search form in Excel to provide a comprehensive data overview and simplify business management.</p>
+    </div>
 
+    <div class="card">
+          <h3>My website - Gal Presil</h3>
+
+          <p class="muted" style="margin-bottom: 0; display: flex; align-items: center; gap: 8px;">
+            Showcasing my projects, experience, education, and skills.
+
+             <a href="https://galpresil.github.io/" id="copy-website-link" 
+          title="Copy link" style="display: flex; align-items: center; gap: 4px; cursor: pointer; font-size: 1.2em;">
+            🔗
+          </a>
+          </p>
+
+  </div>
+</section>
+
+
+    <section id="experience">
+  <div class="section-title"><h2>Experience</h2></div>
+  <div class="container">
+    <div class="card">
+      <h3>Project Coordinator</h3>
+      <div class="exp-meta">
+        <span class="exp-org">Afeka Tel Aviv Academic College of Engineering · Full-time</span><br>
+        <span class="exp-date">Dec 2024 – Present</span>
+      </div>
+
+
+      <br>
+      <ul class="muted dash-list" style="margin-bottom:8px; margin-left: 5px">
+        <li>Leading cross-organizational projects; collaborating closely with various departments.</li>
+        <li>Organizing data and activities for efficient decision-making and business insights.</li>
+        <li>Maintaining information management systems and controlling access permissions.</li>
+        <li>Optimizing processes: identifying, planning, and implementing improvements.</li>
+      </ul>
+
+      <p  style="margin-left: 5px;">
+      <br>
+        <ul class="skills-list-2" style="justify-content: flex-start; padding-left: 5px;"> 
+        <li>Data management</li>
+        <li>Project Management</li>
+        <li>Organizational Consulting</li> 
+        </ul>
+      </p>
+      
+    </div>
+
+
+    <div class="card">
+      <h3>Senior IT Manager & Team Leader</h3>
+      <div class="exp-meta">
+        <span class="exp-org">Israeli Navy, Reserve Duty · Part-time</span><br>
+        <span class="exp-date">Jul 2018 – Present</span>
+      </div>
+      <br>
+       <ul class="muted dash-list" style="margin-bottom:8px; margin-left: 5px">
+        <li>Overseeing and coordinating IT activities and projects of the team.</li>
+        <li>Providing user support and implementing communication networks.</li>
+        <li>Analyzing processes and events for improvement and documentation.</li>
+        <li>Management of the staff members' learning program.</li>
+        
+      </ul>
+      <br>
+      <span class="exp-star" style="font-size:0.95em;">🏅 Certificate of Excellence in Reserve Duty from the Unit Commander (2024).</span>
+    </div>
+    <div class="card">
+      <h3>IT Manager</h3>
+      <div class="exp-meta">
+        <span class="exp-org">Israeli Navy · Full-time</span><br>
+        <span class="exp-date">Jul 2016 – Jul 2018</span>
+      </div>
+      <br>
+      <ul class="muted dash-list" style="margin-bottom:8px; margin-left: 5px">
+        <li>Installation and configuring communication networks and systems.</li>
+        <li>Providing technical support and user management.</li>
+      </ul>
+      <br>
+      <span class="exp-star" style="font-size:0.95em;">🏅 Certificate of Excellence from the Navy Commander (2018).</span>
+    </div>
+  </div>
+</section>
+
+        <section id="Education">
+      <div class="section-title"><h2>Education</h2></div>
+      <div class="container">
+        <div class="card">
+          
+          <h3>B.Sc. Industrial Engineering &amp; Management </h3>
+      
+
+          <div class="exp-meta">
+            <span class="exp-org">Afeka Tel Aviv Academic College of Engineering</span><br>
+            <span class="exp-date">2019 - 2023</span>
+          </div><br>
+
+           <span class="muted">
+             Majors: Information Systems and Business Analytics
+          </span>
+          <br>
+         
+        
+           <div style="margin-top: 0px;">
+            <br><span class="muted">Relevant Courses:</span>
+            <ul class="muted dash-list" style="margin-bottom:8px; margin-left: 5px">
+              <li>Data Mining</li>
+              <li>Cloud Data Engineering</li>
+              <li>Data Structures and Algorithms (Python)</li>
+              <li>Object-Oriented Programming</li>
+              <li>Web Development</li>
+              <li>Databases and Data-Warehouse Systems</li>
+              <li>Human Computer Interaction (UX/UI)</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+
+             <br>  <span class="muted" style="font-size:0.95em;">
+           🏆 First place in Afeka’s final project competition at the Industrial Engineering &amp; Management department. </span>
+        </div>
+
+        <div class="card">
+
+          <h3> High School Diploma, Computer Science</h3>
+
+          <div class="exp-meta">
+            <span class="exp-org">ORT Givatayim High School</span><br>
+            <span class="exp-date">2012 - 2016</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="section-title"><h2>Certifications</h2></div>
+      <div class="container grid grid-2">
+        <div class="card">
+          <h3>Microsoft Power BI Desktop for Business Intelligence</h3>
+          <div class="muted" style="margin-bottom: 6px;">Udemy</div>
+        </div>
+        <div class="card">
+          <h3>Data analysis with Python</h3>
+          <div class="muted" style="margin-bottom: 6px;">she codes;</div>
+        </div>
+        <div class="card">
+          <h3>Microsoft Entra ID (Azure AD) Administration</h3>
+          <div class="muted" style="margin-bottom: 6px;">Udemy</div>
+        </div>
+        <div class="card">
+          <h3>Project Management</h3>
+          <div class="muted" style="margin-bottom: 6px;">Campus IL</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Gal Presil. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal for zoomed image -->
+<div class="modal" id="imgModal">
+  <img id="modalImg" src="" alt="Zoomed image">
+</div>
+<div class="menu-overlay"></div>
+<div id="copy-toast" class="copy-toast">Link Copied!</div>
+
+  <!-- JS file link -->
+  <script src="Script.js"></script>
+
+  
 </body>
-
 </html>
