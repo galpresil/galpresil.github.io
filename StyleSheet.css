@@ -125,7 +125,7 @@
     }
     
     .hero p {
-      max-width:600px;margin:0 auto 20px;color:var(--accent)
+      max-width:400px;margin:0 auto 20px;color:var(--accent)
     }
 
   .hero .btn {
