@@ -87,45 +87,48 @@ brand.classList.remove('visible');
 });
 
 // Swipe functionality for carousel
-const carousel = document.querySelector('.carousel'); // Replace with your carousel container selector
-let startX = 0;
-let endX = 0;
+const carousels = document.querySelectorAll('.carousel');
 
-if (carousel) {
-carousel.addEventListener('touchstart', (e) => {
-startX = e.touches[0].clientX;
+carousels.forEach(carousel => {
+  const imagesContainer = carousel.querySelector('.carousel-images');
+  let startX = 0;
+  let endX = 0;
+
+  imagesContainer.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagesContainer.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  imagesContainer.addEventListener('touchend', () => {
+    const deltaX = endX - startX;
+    const threshold = 50;
+    if (deltaX > threshold) {
+      showPrevSlide(carousel);
+    } else if (deltaX < -threshold) {
+      showNextSlide(carousel);
+    }
+  });
 });
 
-carousel.addEventListener('touchmove', (e) => {
-endX = e.touches[0].clientX;
-});
-
-carousel.addEventListener('touchend', () => {
-const deltaX = endX - startX;
-const threshold = 50;
-if (deltaX > threshold) {
-showPrevSlide();
-} else if (deltaX < -threshold) {
-showNextSlide();
-}
-});
+function showPrevSlide(carousel) {
+  const radios = carousel.querySelectorAll('input[type="radio"]');
+  let currentIndex = Array.from(radios).findIndex(radio => radio.checked);
+  if (currentIndex > 0) {
+    radios[currentIndex - 1].checked = true;
+  } else {
+    radios[radios.length - 1].checked = true; // loop to last
+  }
 }
 
-// Example slide functions (replace with your carousel logic)
-function showPrevSlide() {
-const modalImg = document.getElementById('modalImg');
-if (!modalImg.src) return;
-const images = Array.from(document.querySelectorAll('.carousel img')).map(img => img.src);
-let index = images.indexOf(modalImg.src);
-index = (index - 1 + images.length) % images.length;
-modalImg.src = images[index];
-}
-
-function showNextSlide() {
-const modalImg = document.getElementById('modalImg');
-if (!modalImg.src) return;
-const images = Array.from(document.querySelectorAll('.carousel img')).map(img => img.src);
-let index = images.indexOf(modalImg.src);
-index = (index + 1) % images.length;
-modalImg.src = images[index];
+function showNextSlide(carousel) {
+  const radios = carousel.querySelectorAll('input[type="radio"]');
+  let currentIndex = Array.from(radios).findIndex(radio => radio.checked);
+  if (currentIndex < radios.length - 1) {
+    radios[currentIndex + 1].checked = true;
+  } else {
+    radios[0].checked = true; // loop to first
+  }
 }
