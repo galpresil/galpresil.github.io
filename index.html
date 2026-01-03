@@ -20,6 +20,50 @@
   <!-- CSS file link -->
   <link rel="stylesheet" href="StyleSheet.css">
 
+  <style>
+    /* Smooth transition for carousels */
+    .carousel-images { 
+      transition: margin-left 0.5s ease-in-out;
+      transform: none !important; /* Fix conflict with external CSS */
+    }
+
+    /* HR Dashboard Carousel Logic */
+    #carousel-1:checked ~ .carousel-images { margin-left: 0%; }
+    #carousel-2:checked ~ .carousel-images { margin-left: -100%; }
+    #carousel-3:checked ~ .carousel-images { margin-left: -200%; }
+
+    /* HR Buttons Color */
+    #carousel-1:checked ~ .carousel-controls label[for="carousel-1"],
+    #carousel-2:checked ~ .carousel-controls label[for="carousel-2"],
+    #carousel-3:checked ~ .carousel-controls label[for="carousel-3"] {
+      background: var(--accent);
+    }
+
+    /* Bingo Carousel Logic */
+    #carousel-bingo-1:checked ~ .carousel-images { margin-left: 0%; }
+    #carousel-bingo-2:checked ~ .carousel-images { margin-left: -100%; }
+    #carousel-bingo-3:checked ~ .carousel-images { margin-left: -200%; }
+    #carousel-bingo-4:checked ~ .carousel-images { margin-left: -300%; }
+
+    /* Bingo Buttons Color */
+    #carousel-bingo-1:checked ~ .carousel-controls label[for="carousel-bingo-1"],
+    #carousel-bingo-2:checked ~ .carousel-controls label[for="carousel-bingo-2"],
+    #carousel-bingo-3:checked ~ .carousel-controls label[for="carousel-bingo-3"],
+    #carousel-bingo-4:checked ~ .carousel-controls label[for="carousel-bingo-4"] {
+      background: var(--accent);
+    }
+
+    /* Excel Dashboard Carousel Logic */
+    #carousel-excel-1:checked ~ .carousel-images { margin-left: 0%; }
+    #carousel-excel-2:checked ~ .carousel-images { margin-left: -100%; }
+
+    /* Excel Buttons Color */
+    #carousel-excel-1:checked ~ .carousel-controls label[for="carousel-excel-1"],
+    #carousel-excel-2:checked ~ .carousel-controls label[for="carousel-excel-2"] {
+      background: var(--accent);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -119,21 +163,11 @@
   <div class="container grid grid-2">
     
     <div class="card">
-      <h3>Sentiment Detection System for User Feedback Using Machine Learning</h3>
+      <h3>Sentiment Detection System for User Feedback</h3>
 
       <p style="text-align: center;">
                         <video controls class="imgboarder" 
-                          poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='225' 
-                                  viewBox='0 0 400 225'%3E
-                                  %3Cdefs%3E
-                                  %3ClinearGradient id='bg' x1='0' y1='0' x2='0' y2='1'%3E
-                                  %3Cstop offset='0%25' stop-color='%23f1f3f5'/%3E
-                                  %3Cstop offset='100%25' stop-color='%23dee2e6'/%3E
-                                  %3C/linearGradient%3E
-                                  %3C/defs%3E
-                                  %3Crect width='400' height='225' fill='url(%23bg)'/%3E
-                                  %3Cpolygon points='190,95 190,130 225,112.5' fill='WhiteSmoke'/%3E
-                                  %3C/svg%3E"
+                          poster="Projects_imgs_and_videos/project_Home_Page.png"
                         >
                             <source src="Projects_imgs_and_videos/FinalProject.mp4" type="video/mp4">
                         </video>
@@ -155,16 +189,16 @@
         <input type="radio" name="carousel" id="carousel-1" checked>
         <input type="radio" name="carousel" id="carousel-2">
         <input type="radio" name="carousel" id="carousel-3">
-        <div class="carousel-images">
-          <div class="carousel-image imgboarder">
+        <div class="carousel-images" style="width: 300%;">
+          <div class="carousel-image imgboarder" style="width: 33.333%;">
             <img src="Projects_imgs_and_videos/HRpage1.png" alt="Carocella 1" onclick="openModal(this.src)">
             <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage1.png')"><i class="fas fa-search-plus"></i></button>
           </div>
-          <div class="carousel-image imgboarder">
+          <div class="carousel-image imgboarder" style="width: 33.333%;">
             <img src="Projects_imgs_and_videos/HRpage2.png" alt="Carocella 2" onclick="openModal(this.src)">
             <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage2.png')"><i class="fas fa-search-plus"></i></button>
           </div>
-          <div class="carousel-image imgboarder">
+          <div class="carousel-image imgboarder" style="width: 33.333%;">
             <img src="Projects_imgs_and_videos/HRpage3.png" alt="Carocella 3" onclick="openModal(this.src)">
             <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage3.png')"><i class="fas fa-search-plus"></i></button>
           </div>
@@ -184,16 +218,61 @@
     </div>
 
     <div class="card">
+      <h3>Interactive Image Bingo Game</h3>
+      <div class="carousel">
+        <input type="radio" name="carousel-bingo" id="carousel-bingo-1" checked>
+        <input type="radio" name="carousel-bingo" id="carousel-bingo-2">
+        <input type="radio" name="carousel-bingo" id="carousel-bingo-3">
+        <input type="radio" name="carousel-bingo" id="carousel-bingo-4">
+        <div class="carousel-images" style="width: 400%;">
+          <div class="carousel-image imgboarder" style="width: 25%;">
+            <img src="Projects_imgs_and_videos/1_Bingo_ready_to_start.png" alt="Bingo Game Show 1" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/1_Bingo_ready_to_start.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder" style="width: 25%;">
+            <img src="Projects_imgs_and_videos/2_Bingo_how_to_play_info.png" alt="Bingo Game Show 2" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/2_Bingo_how_to_play_info.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder" style="width: 25%;">
+            <img src="Projects_imgs_and_videos/3_Bingo_press_on_draw.png" alt="Bingo Game Show 3" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/3_Bingo_press_on_draw.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+          <div class="carousel-image imgboarder" style="width: 25%;">
+            <img src="Projects_imgs_and_videos/4_Bingo_end_mode.png" alt="Bingo Game Show 4" onclick="openModal(this.src)">
+            <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/4_Bingo_end_mode.png')"><i class="fas fa-search-plus"></i></button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="carousel-bingo-1"></label>
+          <label for="carousel-bingo-2"></label>
+          <label for="carousel-bingo-3"></label>
+          <label for="carousel-bingo-4"></label>
+        </div>
+      </div>
+      <p class="muted" style="margin-bottom: 0;">
+        A dynamic, web-based Bingo game that lets you upload custom images, 
+        generate printable cards, and host interactive games. 🎉 <a href="https://galpresil.github.io/Bingo_Game_Show/" 
+        target="_blank" title="Play Bingo" style="text-decoration: underline; cursor: pointer;">
+        Let’s play »</a>
+      </p>
+      <div class="github-btn-container">
+        <a href="https://github.com/galpresil/Bingo_Game_Show" class="github-btn">
+          <i class="fab fa-github"></i>View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
       <h3>Sales Dashboard and Search Form with Excel</h3>
       <div class="carousel">
         <input type="radio" name="carousel-excel" id="carousel-excel-1" checked>
         <input type="radio" name="carousel-excel" id="carousel-excel-2">
-        <div class="carousel-images carousel-images-excel">
-          <div class="carousel-image imgboarder">
+        <div class="carousel-images carousel-images-excel" style="width: 200%;">
+          <div class="carousel-image imgboarder" style="width: 50%;">
             <img src="Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png" alt="Excel Dashboard 1" onclick="openModal(this.src)">
             <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png')"><i class="fas fa-search-plus"></i></button>
           </div>
-          <div class="carousel-image imgboarder">
+          <div class="carousel-image imgboarder" style="width: 50%;">
             <img src="Projects_imgs_and_videos/Sales_Search_Form.png" alt="Excel Dashboard 2" onclick="openModal(this.src)">
             <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/Sales_Search_Form.png')"><i class="fas fa-search-plus"></i></button>
           </div>
@@ -255,9 +334,9 @@
       <br>
         <ul class="skills-list-2" style="justify-content: flex-start; padding-left: 5px;"> 
         <li>Data management</li>
+        <li>Artificial Intelligence (AI)</li>
         <li>Project Management</li>
         <li>Organizational Consulting</li> 
-        <li>AI</li>
         </ul>
       </p>
       
