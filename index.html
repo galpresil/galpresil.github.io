@@ -27,15 +27,27 @@
       transform: none !important; /* Fix conflict with external CSS */
     }
 
+    /* Movie Recommender Carousel Logic */
+    #carousel-movie-1:checked ~ .carousel-images { margin-left: 0%; }
+    #carousel-movie-2:checked ~ .carousel-images { margin-left: -100%; }
+    #carousel-movie-3:checked ~ .carousel-images { margin-left: -200%; }
+
+    /* Movie Buttons Color */
+    #carousel-movie-1:checked ~ .carousel-controls label[for="carousel-movie-1"],
+    #carousel-movie-2:checked ~ .carousel-controls label[for="carousel-movie-2"],
+    #carousel-movie-3:checked ~ .carousel-controls label[for="carousel-movie-3"] {
+      background: var(--accent);
+    }
+
     /* HR Dashboard Carousel Logic */
-    #carousel-1:checked ~ .carousel-images { margin-left: 0%; }
-    #carousel-2:checked ~ .carousel-images { margin-left: -100%; }
-    #carousel-3:checked ~ .carousel-images { margin-left: -200%; }
+    #carousel-hr-1:checked ~ .carousel-images { margin-left: 0%; }
+    #carousel-hr-2:checked ~ .carousel-images { margin-left: -100%; }
+    #carousel-hr-3:checked ~ .carousel-images { margin-left: -200%; }
 
     /* HR Buttons Color */
-    #carousel-1:checked ~ .carousel-controls label[for="carousel-1"],
-    #carousel-2:checked ~ .carousel-controls label[for="carousel-2"],
-    #carousel-3:checked ~ .carousel-controls label[for="carousel-3"] {
+    #carousel-hr-1:checked ~ .carousel-controls label[for="carousel-hr-1"],
+    #carousel-hr-2:checked ~ .carousel-controls label[for="carousel-hr-2"],
+    #carousel-hr-3:checked ~ .carousel-controls label[for="carousel-hr-3"] {
       background: var(--accent);
     }
 
@@ -185,9 +197,9 @@
     <div class="card">
       <h3>AI Movie Recommender Platform</h3>
       <div class="carousel">
-        <input type="radio" name="carousel" id="carousel-1" checked>
-        <input type="radio" name="carousel" id="carousel-2">
-        <input type="radio" name="carousel" id="carousel-3">
+        <input type="radio" name="carousel-movie" id="carousel-movie-1" checked>
+        <input type="radio" name="carousel-movie" id="carousel-movie-2">
+        <input type="radio" name="carousel-movie" id="carousel-movie-3">
         <div class="carousel-images" style="width: 300%;">
           <div class="carousel-image imgboarder" style="width: 33.333%;">
             <img src="Projects_imgs_and_videos/1_AI_Movie_Recommender.png" alt="Carocella 1" onclick="openModal(this.src)">
@@ -203,9 +215,9 @@
           </div>
         </div>
         <div class="carousel-controls">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
+          <label for="carousel-movie-1"></label>
+          <label for="carousel-movie-2"></label>
+          <label for="carousel-movie-3"></label>
         </div>
       </div>
       <p class="muted">
@@ -221,9 +233,9 @@
     <div class="card">
       <h3>HR Dashboard with Power BI</h3>
       <div class="carousel">
-        <input type="radio" name="carousel" id="carousel-1" checked>
-        <input type="radio" name="carousel" id="carousel-2">
-        <input type="radio" name="carousel" id="carousel-3">
+        <input type="radio" name="carousel-hr" id="carousel-hr-1" checked>
+        <input type="radio" name="carousel-hr" id="carousel-hr-2">
+        <input type="radio" name="carousel-hr" id="carousel-hr-3">
         <div class="carousel-images" style="width: 300%;">
           <div class="carousel-image imgboarder" style="width: 33.333%;">
             <img src="Projects_imgs_and_videos/HRpage1.png" alt="Carocella 1" onclick="openModal(this.src)">
@@ -239,9 +251,9 @@
           </div>
         </div>
         <div class="carousel-controls">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
+          <label for="carousel-hr-1"></label>
+          <label for="carousel-hr-2"></label>
+          <label for="carousel-hr-3"></label>
         </div>
       </div>
       <p class="muted">Creating a three-page HR dashboard in Power BI to enhance employee recruitment, satisfaction, and retention.</p>
