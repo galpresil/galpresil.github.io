@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gal Presil - Portfolio</title>
+  <link rel="icon" href="Logo_and_About/BrowserLogo.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@400..700&family=Syne:wght@400..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="StyleSheet.css">
+
+  <style>
+    #carousel-movie-1:checked~.carousel-controls label[for="carousel-movie-1"],
+    #carousel-movie-2:checked~.carousel-controls label[for="carousel-movie-2"],
+    #carousel-movie-3:checked~.carousel-controls label[for="carousel-movie-3"],
+    #carousel-hr-1:checked~.carousel-controls label[for="carousel-hr-1"],
+    #carousel-hr-2:checked~.carousel-controls label[for="carousel-hr-2"],
+    #carousel-hr-3:checked~.carousel-controls label[for="carousel-hr-3"],
+    #carousel-bingo-1:checked~.carousel-controls label[for="carousel-bingo-1"],
+    #carousel-bingo-2:checked~.carousel-controls label[for="carousel-bingo-2"],
+    #carousel-bingo-3:checked~.carousel-controls label[for="carousel-bingo-3"],
+    #carousel-bingo-4:checked~.carousel-controls label[for="carousel-bingo-4"],
+    #carousel-excel-1:checked~.carousel-controls label[for="carousel-excel-1"],
+    #carousel-excel-2:checked~.carousel-controls label[for="carousel-excel-2"] {
+      background: var(--accent-2);
+    }
+
+    #carousel-movie-1:checked~.carousel-images {
+      transform: translateX(0%);
+    }
+
+    #carousel-movie-2:checked~.carousel-images {
+      transform: translateX(-100%);
+    }
+
+    #carousel-movie-3:checked~.carousel-images {
+      transform: translateX(-200%);
+    }
+
+    #carousel-hr-1:checked~.carousel-images {
+      transform: translateX(0%);
+    }
+
+    #carousel-hr-2:checked~.carousel-images {
+      transform: translateX(-100%);
+    }
+
+    #carousel-hr-3:checked~.carousel-images {
+      transform: translateX(-200%);
+    }
+
+    #carousel-bingo-1:checked~.carousel-images {
+      transform: translateX(0%);
+    }
+
+    #carousel-bingo-2:checked~.carousel-images {
+      transform: translateX(-100%);
+    }
+
+    #carousel-bingo-3:checked~.carousel-images {
+      transform: translateX(-200%);
+    }
+
+    #carousel-bingo-4:checked~.carousel-images {
+      transform: translateX(-300%);
+    }
+
+    #carousel-excel-1:checked~.carousel-images {
+      transform: translateX(0%);
+    }
+
+    #carousel-excel-2:checked~.carousel-images {
+      transform: translateX(-100%);
+    }
+
+    #carousel-movie-1:checked~.carousel-nav label[data-slide="1"],
+    #carousel-movie-2:checked~.carousel-nav label[data-slide="2"],
+    #carousel-movie-3:checked~.carousel-nav label[data-slide="3"],
+    #carousel-hr-1:checked~.carousel-nav label[data-slide="1"],
+    #carousel-hr-2:checked~.carousel-nav label[data-slide="2"],
+    #carousel-hr-3:checked~.carousel-nav label[data-slide="3"],
+    #carousel-bingo-1:checked~.carousel-nav label[data-slide="1"],
+    #carousel-bingo-2:checked~.carousel-nav label[data-slide="2"],
+    #carousel-bingo-3:checked~.carousel-nav label[data-slide="3"],
+    #carousel-bingo-4:checked~.carousel-nav label[data-slide="4"],
+    #carousel-excel-1:checked~.carousel-nav label[data-slide="1"],
+    #carousel-excel-2:checked~.carousel-nav label[data-slide="2"] {
+      display: block;
+    }
+
+    .skills-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      text-align: center;
+    }
+
+    .skill-category h4 {
+      margin-bottom: 1.2rem;
+      color: var(--accent);
+      font-family: var(--heading-font);
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand"><a href="#about">Gal Presil</a></div>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-wrapper">
+        <div class="hero-text">
+          <h1 class="hero-title-type"><span id="typewriter"></span><span class="typewriter-cursor"
+              aria-hidden="true">|</span></h1>
+          <p>Data Specialist & Project Coordinator - AI & Analytics
+            <br>B.Sc. in Industrial Engineering & Management
+          </p>
+          <a href="#projects" class="btn">View My Projects &gt;&gt;</a>
+          <div class="contact-icons">
+            <a href="mailto:gal.presil@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/gal-presil/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/galpresil"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="container projects-container">
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>AI Movie Recommender Platform (RAG)</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad">
+                <div class="project-text">
+                  <p class="muted" style="margin-bottom: 0;">An AI-powered movie recommendation platform designed to
+                    decode natural language user
+                    requests. By combining semantic search with lexical precision, the system ensures that users find
+                    the exact movie they are looking for.</p>
+                </div>
+                <div class="project-media">
+                  <div class="carousel">
+                    <input type="radio" name="carousel-movie" id="carousel-movie-1" checked>
+                    <input type="radio" name="carousel-movie" id="carousel-movie-2">
+                    <input type="radio" name="carousel-movie" id="carousel-movie-3">
+                    <div class="carousel-nav">
+                      <label for="carousel-movie-3" class="prev" data-slide="1"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-movie-2" class="next" data-slide="1"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-movie-1" class="prev" data-slide="2"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-movie-3" class="next" data-slide="2"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-movie-2" class="prev" data-slide="3"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-movie-1" class="next" data-slide="3"><i
+                          class="fas fa-angle-right"></i></label>
+                    </div>
+                    <div class="carousel-images">
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/1_AI_Movie_Recommender.png">
+                        <button class="zoom-btn"
+                          onclick="openModal('Projects_imgs_and_videos/1_AI_Movie_Recommender.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/2_AI_Movie_Recommender.png">
+                        <button class="zoom-btn"
+                          onclick="openModal('Projects_imgs_and_videos/2_AI_Movie_Recommender.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/3_AI_Movie_Recommender.png">
+                        <button class="zoom-btn"
+                          onclick="openModal('Projects_imgs_and_videos/3_AI_Movie_Recommender.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="carousel-movie-1"></label><label for="carousel-movie-2"></label><label
+                        for="carousel-movie-3"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-meta-info">
+                  <ul class="skills-list-proj" style="margin-bottom: 15px;">
+                    <li>Python</li>
+                    <li>RAG</li>
+                    <li>AI</li>
+                    <li>NLP</li>
+                    <li>Vision Language Processing</li>
+                    <li>HTML + CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git + GitHub</li>
+                  </ul>
+                  <a href="https://github.com/galpresil/AI_Movie_Recommender" class="github-btn"><i
+                      class="fab fa-github"></i> View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>Sentiment Detection System Using Machine Learning</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad">
+                <div class="project-text">
+                  <p class="muted">The project aims to enhance public transportation by analyzing customer sentiment
+                    from social media, including developing a website, NLP algorithms, and building a dynamic dashboard.
+                  </p>
+                  <p class="muted" style="margin-bottom: 0;"><b>First place</b> in Afeka’s final project competition.
+                  </p>
+                </div>
+                <div class="project-media">
+                  <div class="carousel-image">
+                    <video autoplay loop muted playsinline controls
+                      poster="Projects_imgs_and_videos/project_Home_Page.png" style="width:100%;">
+                      <source src="Projects_imgs_and_videos/FinalProject.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="project-meta-info">
+                  <ul class="skills-list-proj" style="margin-top: 5px;">
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Machine Learning</li>
+                    <li>Sentiment Analysis (NLP)</li>
+                    <li>HTML + CSS</li>
+                    <li>Flask</li>
+                    <li>JavaScript</li>
+                    <li>Power Bi</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>HR Dashboard with Power BI</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad">
+                <div class="project-text">
+                  <p class="muted" style="margin-bottom: 0;">Creating a three-page HR dashboard in Power BI to enhance
+                    employee recruitment,
+                    satisfaction, and retention.</p>
+                </div>
+                <div class="project-media">
+                  <div class="carousel">
+                    <input type="radio" name="carousel-hr" id="carousel-hr-1" checked>
+                    <input type="radio" name="carousel-hr" id="carousel-hr-2">
+                    <input type="radio" name="carousel-hr" id="carousel-hr-3">
+                    <div class="carousel-nav">
+                      <label for="carousel-hr-3" class="prev" data-slide="1"><i class="fas fa-angle-left"></i></label>
+                      <label for="carousel-hr-2" class="next" data-slide="1"><i class="fas fa-angle-right"></i></label>
+                      <label for="carousel-hr-1" class="prev" data-slide="2"><i class="fas fa-angle-left"></i></label>
+                      <label for="carousel-hr-3" class="next" data-slide="2"><i class="fas fa-angle-right"></i></label>
+                      <label for="carousel-hr-2" class="prev" data-slide="3"><i class="fas fa-angle-left"></i></label>
+                      <label for="carousel-hr-1" class="next" data-slide="3"><i class="fas fa-angle-right"></i></label>
+                    </div>
+                    <div class="carousel-images">
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/HRpage1.png">
+                        <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage1.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/HRpage2.png">
+                        <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage2.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                      <div class="carousel-image">
+                        <img src="Projects_imgs_and_videos/HRpage3.png">
+                        <button class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/HRpage3.png')"><i
+                            class="fas fa-expand"></i></button>
+                      </div>
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="carousel-hr-1"></label><label for="carousel-hr-2"></label><label
+                        for="carousel-hr-3"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-meta-info">
+                  <ul class="skills-list-proj" style="margin-bottom: 15px;">
+                    <li>Data Analysis</li>
+                    <li>Power Bi</li>
+                    <li>DAX</li>
+                    <li>Power Query</li>
+                    <li>ETL</li>
+                    <li>Data Modeling & Visualization</li>
+                  </ul>
+                  <a href="https://github.com/galpresil/HR_Dashboard_with_Power_BI" class="github-btn"><i
+                      class="fab fa-github"></i> View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>Sales Dashboard & Search Form with Excel</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad">
+                <div class="project-text">
+                  <p class="muted" style="margin-bottom: 0;">This project involves creating a dynamic sales dashboard
+                    and search form in Excel to
+                    provide a comprehensive data overview and simplify business management.</p>
+                </div>
+                <div class="project-media">
+                  <div class="carousel">
+                    <input type="radio" name="carousel-excel" id="carousel-excel-1" checked>
+                    <input type="radio" name="carousel-excel" id="carousel-excel-2">
+                    <div class="carousel-nav">
+                      <label for="carousel-excel-2" class="prev" data-slide="1"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-excel-2" class="next" data-slide="1"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-excel-1" class="prev" data-slide="2"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-excel-1" class="next" data-slide="2"><i
+                          class="fas fa-angle-right"></i></label>
+                    </div>
+                    <div class="carousel-images">
+                      <div class="carousel-image"><img
+                          src="Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png"><button class="zoom-btn"
+                          onclick="openModal('Projects_imgs_and_videos/Dynamic_Sales_Dashboard.png')"><i
+                            class="fas fa-expand"></i></button></div>
+                      <div class="carousel-image"><img src="Projects_imgs_and_videos/Sales_Search_Form.png"><button
+                          class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/Sales_Search_Form.png')"><i
+                            class="fas fa-expand"></i></button></div>
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="carousel-excel-1"></label><label for="carousel-excel-2"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-meta-info">
+                  <ul class="skills-list-proj" style="margin-top: 5px;">
+                    <li>Data Analysis</li>
+                    <li>Business Intelligence (BI)</li>
+                    <li>Excel</li>
+                    <li>Pivot Tables</li>
+                    <li>Charts</li>
+                    <li>Slicers</li>
+                    <li>Advanced Functions (inc. lookup Functions)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>Interactive Image Bingo Game</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad">
+                <div class="project-text">
+                  <p class="muted" style="margin-bottom: 0;">A dynamic, web-based Bingo game that lets you upload
+                    custom
+                    images, generate
+                    printable cards, and host interactive games. 🎉
+                    <a href="https://galpresil.github.io/Bingo_Game_Show/" target="_blank"
+                      style="text-decoration: underline; color: var(--accent); font-weight: 500; display: inline-block;">Let’s play »</a>
+                  </p>
+                </div>
+                <div class="project-media">
+                  <div class="carousel">
+                    <input type="radio" name="carousel-bingo" id="carousel-bingo-1" checked>
+                    <input type="radio" name="carousel-bingo" id="carousel-bingo-2">
+                    <input type="radio" name="carousel-bingo" id="carousel-bingo-3">
+                    <input type="radio" name="carousel-bingo" id="carousel-bingo-4">
+                    <div class="carousel-nav">
+                      <label for="carousel-bingo-4" class="prev" data-slide="1"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-bingo-2" class="next" data-slide="1"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-bingo-1" class="prev" data-slide="2"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-bingo-3" class="next" data-slide="2"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-bingo-2" class="prev" data-slide="3"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-bingo-4" class="next" data-slide="3"><i
+                          class="fas fa-angle-right"></i></label>
+                      <label for="carousel-bingo-3" class="prev" data-slide="4"><i
+                          class="fas fa-angle-left"></i></label>
+                      <label for="carousel-bingo-1" class="next" data-slide="4"><i
+                          class="fas fa-angle-right"></i></label>
+                    </div>
+                    <div class="carousel-images">
+                      <div class="carousel-image"><video autoplay loop muted playsinline style="width: 100%;">
+                          <source src="Projects_imgs_and_videos/Bingo.mp4" type="video/mp4">
+                        </video></div>
+                      <div class="carousel-image"><img
+                          src="Projects_imgs_and_videos/2_Bingo_how_to_play_info.png"><button class="zoom-btn"
+                          onclick="openModal('Projects_imgs_and_videos/2_Bingo_how_to_play_info.png')"><i
+                            class="fas fa-expand"></i></button></div>
+                      <div class="carousel-image"><img src="Projects_imgs_and_videos/3_Bingo_press_on_draw.png"><button
+                          class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/3_Bingo_press_on_draw.png')"><i
+                            class="fas fa-expand"></i></button></div>
+                      <div class="carousel-image"><img src="Projects_imgs_and_videos/4_Bingo_end_mode.png"><button
+                          class="zoom-btn" onclick="openModal('Projects_imgs_and_videos/4_Bingo_end_mode.png')"><i
+                            class="fas fa-expand"></i></button></div>
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="carousel-bingo-1"></label><label for="carousel-bingo-2"></label><label
+                        for="carousel-bingo-3"></label><label for="carousel-bingo-4"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-meta-info">
+                  <ul class="skills-list-proj" style="margin-bottom: 15px;">
+                    <li>HTML + CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git + GitHub</li>
+                  </ul>
+                  <a href="https://github.com/galpresil/Bingo_Game_Show" class="github-btn"><i
+                      class="fab fa-github"></i> View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header" onclick="toggleProject(this)">
+            <h3>Portfolio Website - Gal Presil</h3>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="project-body-wrapper">
+            <div class="project-body-inner">
+              <div class="project-content-pad" style="grid-template-columns: 1fr; gap: 15px;">
+                <div class="project-text">
+                  <p class="muted" style="margin: 0; display: flex; align-items: center; gap: 10px;">
+                    Showcasing my projects, experience, education, and skills.
+                    <a href="https://galpresil.github.io/" id="copy-website-link" class="copy-link-btn"
+                      title="Copy link"><i class="fas fa-link"></i></a>
+                  </p>
+                </div>
+                <div class="project-meta-info portfolio-meta">
+                  <ul class="skills-list-proj">
+                    <li>HTML + CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git + GitHub</li>
+                  </ul>
+                  <a href="https://github.com/galpresil/galpresil.github.io" class="github-btn"><i
+                      class="fab fa-github"></i> View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="container timeline" style="max-width: 900px;">
+
+        <div class="timeline-item current">
+          <div class="timeline-card resume-card">
+            <h3 class="resume-title">Project Coordinator</h3>
+            <div class="resume-meta">
+              <span class="resume-org">Afeka Tel Aviv Academic College of Engineering · Full-time</span>
+              <span class="resume-date">Dec 2024 – Present</span>
+            </div>
+            <ul class="muted resume-list">
+              <li>Organizing data and activities for efficient decision-making and business insights.</li>
+              <li>Implementing and maintaining information management systems and access controls.</li>
+              <li>Leading cross-organizational projects and driving process improvements.</li>
+              <li>Integrating AI tools into organizational workflows.</li>
+            </ul>
+            <ul class="skills-list-exp">
+              <li>Data management</li>
+              <li>process improvement</li>
+              <li>Project leadership</li>
+              <li>Organizational Consulting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card resume-card">
+            <h3 class="resume-title">Senior IT Manager & Team Leader</h3>
+            <div class="resume-meta">
+              <span class="resume-org">Israeli Navy, Reserve Duty · Part-time</span>
+              <span class="resume-date">Jul 2018 – Present</span>
+            </div>
+            <ul class="muted resume-list">
+              <li>Overseeing and coordinating IT activities and projects.</li>
+              <li>Analyzing processes and events for improvement and documentation.</li>
+              <li>Providing user support and implementing communication networks.</li>
+              <li>Management of the staff members' learning program.</li>
+              <li><b>Certificate of Excellence</b> in Reserve Duty from the Unit Commander (2024).</li>
+            </ul>
+            <ul class="skills-list-exp">
+              <li>Management</li>
+              <li>User Support</li>
+              <li>networks Configuration</li>
+              <li>Technical Documentation</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card resume-card">
+            <h3 class="resume-title">IT Manager</h3>
+            <div class="resume-meta">
+              <span class="resume-org">Israeli Navy · Full-time</span>
+              <span class="resume-date">Jul 2016 – Jul 2018</span>
+            </div>
+            <ul class="muted resume-list">
+              <li>Installation and configuration of communication networks and systems.</li>
+              <li>Providing technical support and user management.</li>
+              <li><b>Certificate of Excellence</b> from the Navy Commander (2018).</li>
+            </ul>
+            <ul class="skills-list-exp">
+              <li>Systems Configuration</li>
+              <li>Technical Support</li>
+              <li>Windows</li>
+              <li>Linux</li>
+              <li>Active Directory</li>
+              <li>CRM</li>
+              <li>Teamwork</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="Education">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="container grid" style="max-width: 900px;">
+
+        <div class="cert-card resume-card">
+          <h3 class="resume-title">B.Sc. Industrial Engineering &amp; Management</h3>
+          <div class="resume-meta">
+            <span class="resume-org">Afeka Tel Aviv Academic College of Engineering</span>
+            <span class="resume-date">2019 - 2023</span>
+          </div>
+          <div class="muted" style="margin-bottom: 0px; margin-top: -5px; line-height: 1.6; font-size: 0.95rem;">
+            <div><strong>Majors:</strong> Information Systems &amp; Business
+              Analytics</div>
+            <div style="margin-top: 8px;"><b>First place</b> in Afeka’s final project competition at the Industrial
+              Engineering & Management department.</div>
+          </div>
+        </div>
+
+        <div class="cert-card resume-card">
+          <h3 class="resume-title">Higher Education, AI Engineering Program</h3>
+          <div class="resume-meta">
+            <span class="resume-org">The Hebrew University of Jerusalem</span>
+            <span class="resume-date">2025 - 2026</span>
+          </div>
+          <p class="muted" style="margin-bottom: 0px; margin-top: -5px;">
+            An advanced data science program focused on practical applications of machine learning, generative AI, and
+            LLMs.
+          </p>
+        </div>
+
+        <div class="cert-card resume-card">
+          <h3 class="resume-title">High School Diploma, Computer Science</h3>
+          <div class="resume-meta">
+            <span class="resume-org">ORT Givatayim High School</span>
+            <span class="resume-date">2012 - 2016</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="section-title">
+        <h2>Certifications</h2>
+      </div>
+      <div class="container cert-grid" style="max-width: 900px;">
+        <div class="cert-card">
+          <h3>Data analysis with Python</h3>
+          <div class="muted">she codes;</div>
+        </div>
+        <div class="cert-card">
+          <h3>Microsoft PowerBI Desktop for Business Intelligence</h3>
+          <div class="muted">Udemy</div>
+        </div>
+        <div class="cert-card">
+          <h3>Microsoft Entra ID (Azure AD) Administration</h3>
+          <div class="muted">Udemy</div>
+        </div>
+        <div class="cert-card">
+          <h3>Project Management</h3>
+          <div class="muted">Campus IL</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-right">
+        <div class="contact-icons">
+          <a href="mailto:gal.presil@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/gal-presil/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/galpresil" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2026 Gal Presil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="imgModal">
+    <button class="close-btn" onclick="closeModal()">&times;</button>
+    <img id="modalImg" src="">
+  </div>
+  <div id="copy-toast" class="copy-toast">Link Copied</div>
+  <script src="Script.js"></script>
+</body>
+
+</html>
